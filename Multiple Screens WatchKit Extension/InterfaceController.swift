@@ -11,6 +11,20 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
+    
+    
+    @IBAction func firstTappedOn() {
+        self.pushController(withName: "first", context: nil)
+        
+    }
+    @IBAction func secondTappedOn() {
+        self.pushController(withName: "second", context: nil)
+
+    }
+    @IBAction func thirdTappedOn() {
+        self.pushController(withName: "third", context: nil)
+
+    }
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
